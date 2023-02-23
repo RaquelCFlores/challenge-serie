@@ -1,0 +1,22 @@
+<div class="container">
+
+    <mat-card class="card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Calcular Serie</mat-card-title>
+            <mat-card-subtitle class="textSerie">serie(n) = 2triangular( n + 1 ) - 2primo(n) + fibonacci( n + 1 )</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="outline" class="inputNumber">
+                <mat-label>Ingresa el valor de "n"</mat-label>
+                <input matInput type="number" placeholder="Número" #number required (input)="flatButton()" min="0"/>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
+              <button [disabled]="flag" type="submit" class="button" mat-raised-button color="primary" (click)="calculate();">Calcular</button>
+        </mat-card-content>
+        <app-calculate [number] = "value" (resultSerie)="resultSerie($event)"></app-calculate>
+        <app-result [number] = "value" [result]="resultTotal"></app-result>
+    </mat-card>
+
+</div>

@@ -1,0 +1,31 @@
+.container {
+  background-color: #ebf5fb;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: max-content;
+  height: min-content;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.inputNumber {
+  margin: 15px 0px;
+}
+
+.textSerie {
+  margin: 15px 0px;
+  font-size: medium;
+}
+
+.button {
+  width: 150px;
+  min-width: 100px;
+  height: 45px;
+  margin-left: 16px;
+}

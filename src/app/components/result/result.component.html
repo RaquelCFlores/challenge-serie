@@ -1,0 +1,12 @@
+<div class="container" *ngIf="result">
+  <mat-card class="result-card">
+    <mat-card-header>
+      <mat-card-title-group class="textResult">
+        <mat-card-title>Resultado</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="textResult">
+      <strong>serie({{ number }}) = {{ result | number }}</strong>
+    </mat-card-content>
+  </mat-card>
+</div>
